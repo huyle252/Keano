@@ -1,0 +1,10 @@
+h1 Danh Sách Từ
+
+a(href="/create") Thêm Từ Mới
+
+form(action="/search", method="GET")
+    input(type="text", name="q")
+    button Search
+ul
+    each word in words
+        li= word.name
