@@ -6,18 +6,6 @@ const mongoose = require("mongoose");
 const multer = require('multer')
 const url = `mongodb+srv://huyle252:family9788vn@cluster0.ote7who.mongodb.net/bana?retryWrites=true&w=majority`;
 const path = require("path");
-MongoClient.connect(url).then((client) => {
-  const connect = client.db(bana)
-  connect.listCollections().toArray(function(err, names) {   
-      if(!err) {
-          console.log(names)
-      }
-  });
-}).catch((err) => {
-
-  // Printing the error message
-  console.log(err.Message);
-})
 
 const formSchema = new mongoose.Schema(
   {
